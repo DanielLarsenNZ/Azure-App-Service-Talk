@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageResizer", "ImageResizer\ImageResizer.csproj", "{BEEB1397-92B5-4784-AF7F-06FF80F99B93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scale.Storage", "..\..\Scale-Storage\Scale.Storage\Scale.Storage.csproj", "{E24AE0AD-D71C-423C-8363-940BA2EB4E24}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B95224E4-70FB-4C6D-8C48-C322D4847F93}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -31,10 +29,6 @@ Global
 		{BEEB1397-92B5-4784-AF7F-06FF80F99B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEEB1397-92B5-4784-AF7F-06FF80F99B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEEB1397-92B5-4784-AF7F-06FF80F99B93}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E24AE0AD-D71C-423C-8363-940BA2EB4E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E24AE0AD-D71C-423C-8363-940BA2EB4E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E24AE0AD-D71C-423C-8363-940BA2EB4E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E24AE0AD-D71C-423C-8363-940BA2EB4E24}.Release|Any CPU.Build.0 = Release|Any CPU
 		{07BDE5DC-26CF-4F14-B707-5A63354227A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{07BDE5DC-26CF-4F14-B707-5A63354227A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07BDE5DC-26CF-4F14-B707-5A63354227A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
