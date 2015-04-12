@@ -27,11 +27,10 @@ namespace ImageResizer
                         graphicsHandle.DrawImage(originalImage, 0, 0, newSize.Width, newSize.Height);
                     }
 
-                    using (var memStream = new MemoryStream())
-                    {
-                        newImage.Save(memStream, ImageFormat.Jpeg);
-                        return memStream;
-                    }
+                    var memStream = new MemoryStream();                    
+                    newImage.Save(memStream, ImageFormat.Jpeg);
+                    memStream.Seek(0, SeekOrigin.Begin);
+                    return memStream;
                 }
             }
         }
