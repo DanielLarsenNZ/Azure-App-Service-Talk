@@ -45,6 +45,7 @@ http://azure.microsoft.com/en-us/documentation/articles/app-service-logic-use-lo
 1. Copy Endpoint URL -> Postman
 2. Postman - Basic auth, default:{Primary Access Key}
 3. Content-Type: application/json
+4. /run?api-version=2015-02-01-preview
 4. body = 
     {
         "name" : "DansApiTrigger",
@@ -75,6 +76,9 @@ http://azure.microsoft.com/en-us/documentation/articles/app-service-dotnet-deplo
 * Australia Geo not supported yet
 * You can connect to on-premise resources like SQL Server with a Hybrid Connection.
 * You need to upgrade to Azure SDK 2.5.1.
+* Error Responses appear to be swallowed with "an error has occurred". I return my own 500 response with a message.
+
+
 
 ## Questions
 * Any changes for Mobile Apps?
@@ -93,6 +97,7 @@ http://azure.microsoft.com/en-us/documentation/articles/app-service-dotnet-deplo
 * Azure App Service Launch: https://channel9.msdn.com/Events/Microsoft-Azure/Scott-Guthrie-March-24-2015-Announcement/Azure-App-Service-announcement
 * This is the best summary of App Service that I have read: http://www.infoworld.com/article/2904348/application-development/first-look-microsoft-azure-app-services-cloud-development.html
 * Azure API explorer https://resources.azure.com/subscriptions/036c9926-0ea1-4d2e-bff0-321e7e6f96e1/resourceGroups/Sydney/providers/Microsoft.Web/sites/jukebox30
+
 * Reviews: 
  * http://www.codit.eu/blog/2015/03/24/welcome-azure-app-service-some-of-my-thoughts/
  * http://www.quicklearn.com/blog/2015/03/24/azure-app-service-biztalk-server-paas-done-right/
@@ -100,13 +105,11 @@ http://azure.microsoft.com/en-us/documentation/articles/app-service-dotnet-deplo
 * http://blogs.msdn.com/b/webdev/archive/2015/03/24/introducing-azure-api-apps.aspx
 * http://azure.microsoft.com/en-us/documentation/articles/app-service-api-apps-why-best-platform/
 * http://azure.microsoft.com/en-us/documentation/articles/app-service-dotnet-create-api-app/
-* http://requestb.in/ovs9phov?inspect
-* https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2015AzurePack.appids
-
 
 * http://blogs.biztalk360.com/azure-api-app-and-logic-app-in-depth-look-into-hybrid-connector-marriage-between-cloud-and-on-premise/
-
-
+* http://azure.microsoft.com/en-in/documentation/articles/app-service-logic-connector-pop3/
+* http://azure.microsoft.com/en-us/documentation/articles/app-service-logic-connector-azurestorageblob/
+* http://azure.microsoft.com/en-gb/documentation/articles/app-service-logic-use-logic-app-features/
 
 ## Demos
 1. Read image from OneDrive, hit endpoint
