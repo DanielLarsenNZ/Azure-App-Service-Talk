@@ -1,7 +1,7 @@
 # Azure App Service Talk
 
 ## Chapters
-1. 10' Intro: PaaS story, Integration story, build on Azure Websites (now Web Apps)
+1. 10' Intro: PaaS story, Integration story, built on Azure Websites (now Web Apps)
 2. 10' Web Apps, Mobile Apps, GitHub Deployments in New Portal, Portal updates, Azure API Explorer
 3. 10' API App Marketplace, Lego for integrators, PaaS story (upgrades)
 4. 10' Hello Logic Apps, API, Scripted Deployment
@@ -83,7 +83,14 @@ http://azure.microsoft.com/en-us/documentation/articles/app-service-dotnet-deplo
 * What is a Gateway App?
 
 
+## Fact check
+* Resource Group = VM? Affinity?
+
+
+
+
 ## Links and references
+* Azure App Service Launch: https://channel9.msdn.com/Events/Microsoft-Azure/Scott-Guthrie-March-24-2015-Announcement/Azure-App-Service-announcement
 * This is the best summary of App Service that I have read: http://www.infoworld.com/article/2904348/application-development/first-look-microsoft-azure-app-services-cloud-development.html
 * Azure API explorer https://resources.azure.com/subscriptions/036c9926-0ea1-4d2e-bff0-321e7e6f96e1/resourceGroups/Sydney/providers/Microsoft.Web/sites/jukebox30
 * Reviews: 
@@ -97,3 +104,11 @@ http://azure.microsoft.com/en-us/documentation/articles/app-service-dotnet-deplo
 * https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2015AzurePack.appids
 
 
+* http://blogs.biztalk360.com/azure-api-app-and-logic-app-in-depth-look-into-hybrid-connector-marriage-between-cloud-and-on-premise/
+
+
+
+## Demos
+1. Read image from OneDrive, hit endpoint
+1. Read image from Email attachments, save to Storage, hit endpoint
+1. Read image from Email attachment, resize, save to Storage, hit endpoint
