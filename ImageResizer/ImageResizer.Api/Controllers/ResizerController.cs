@@ -21,7 +21,7 @@ namespace ImageResizer.Api.Controllers
         /// <param name="params">A JSON or XML model object that must contain uri (string), maxWidth (int) and maxHeight (int).</param>
         /// <returns>The URL of the new, resized JPEG image.</returns>
         /// <remarks>Original image Blob must be in the Storage Account that is configured in appSettings. Resized image will be saved
-        /// in the same Container. If the resized image already exists, it will be overwritten.</remarks>
+        /// in to a Container named 'resized' (it will be created if it does not exist). If the resized image already exists, it will be overwritten.</remarks>
         public async Task<HttpResponseMessage> ResizeInStorage(ResizeTo @params)
         {
             string uri = @params.Uri;
@@ -52,7 +52,8 @@ namespace ImageResizer.Api.Controllers
             var newBlobName = paths[paths.Length - 1].Replace(".jpg", string.Format("_{0}.jpg", Math.Max(maxWidth, maxHeight)));
 
             // save the blob
-            var newUri = await storage.Upload(blob.ContainerName, newBlobName, "image/jpeg", newImage);
+            await storage.CreateContainer("resized");
+            var newUri = await storage.Upload("resized", newBlobName, "image/jpeg", newImage);
 
             // return the new URI
             return Request.CreateResponse(HttpStatusCode.OK, new { newUri });
